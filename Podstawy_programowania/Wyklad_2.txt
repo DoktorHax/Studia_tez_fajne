@@ -1,0 +1,86 @@
+// #funkcje
+// #rekurencyjne_bazy_danych
+                                    // wartość zwrotna funkcji = argumenty funkcji przepuszczone przez funkcje;
+// Dzielić duży program na pare małych plików odnośnie tego co który robi W0W
+
+
+// schemat funkcji
+// type nazwaFunkcji (argumenty){
+    //instrukcje wykonywane przez funkcjie
+// }
+
+
+// podstawowe funkcje main(), pow(), sqrt()
+
+// funkcje definiujemy poza funkcją main
+// procedura = funkcja zwracająca void (nic)
+
+// int a(void);
+// int b(int p);
+
+// int main(){
+//     return b(1);
+// }
+
+// int a(){
+//     return b(0);
+// }
+//     int b(int p){
+//         if(p==0) return 1;
+//         else cout>>"go fuck yourself">>endl;
+//     }
+
+
+// int iloczyn (int x, int y){
+//     int iloczyn_xy;
+//     iloczyn_xy=x^y;
+//     return iloczyn_xy;
+// }
+
+// #include <iostream>
+// using namespace std;
+// double kwadrat (double x){
+//     double wynik;
+//     wynik=x^x;
+//     return wynik;
+// }
+
+            //funkcje rekurencyjne (liczenie silni)
+            // int silnia(int liczba){
+            //     int sil;
+            //     if(liczba<0) return 0;
+            //     if(liczba++0||liczba==1) return 1;
+            //     sil=liczba*silnia(liczba-1);
+            //     return sil;
+            
+            // funkcja rekurencyjna obliczająca n-ty element ciągu Fibonacciego
+            // unsigned fib(unsigned n){
+            //     if(n==0) return 0;
+            //     if(n<=2) return 1;
+            //     return fib(n-1)+fib(n-2);
+            // }
+
+            // funkcja rekurencyjna sumująca wszustkie cyfry danej liczby
+            // int suma_cyfr(long long n){
+            //     if(n>0) return n%10+suma_cyfr(n/10);
+            //     return 0;
+            // }
+
+
+// kod dzielić na małe części bo tak ludzie chcą
+
+//  funkcja literacyjna sumująca kolejne liczby naturalne od 1 do n
+    // suma(int n){
+    //     int krok, suma=0;
+    //     while (krok<=n){
+    //         suma+=krok;
+    //         krok++;
+    //     }
+    //     return suma;
+    //     }
+
+//  funkcja rekurencyjna sumująca kolejne liczby naturalne od 1 do n
+    // long long suma(int n){
+    //     if(n<1) return 0;
+    //     return n+suma(n-1);
+    // }

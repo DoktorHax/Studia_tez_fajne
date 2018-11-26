@@ -1,0 +1,116 @@
+// Tablice woohoooo
+
+//tak dla opornych pamiętać tablice liczym od zera czyli jak chcemy 3 elementową tablice to tablice definiujemy elementy na 2
+
+// tablice statyczne i dynamiczne
+// statyczne = tablice definiujemy na sztywno
+// dynamiczne = tablice których ilość wartości możemy zmieniać
+
+// TABLICA STATYCZNA
+
+// deklaracja tablicy:
+// typ nazwa_tablicy[długość_tablicy]
+// int main(){
+//     int najlepszyWynik[5];
+//     double KatyTrojkata[3];
+//     return 0;
+// }
+
+// int const DlugoscTablicyDwudziestokata(20);
+// double KatyDwudziestokata(DlugoscTablicyDwudziestokata);
+
+// aby wprowadzić dane:
+// nazwa_tablicy[numer_elementu_tablicy]=wartosc
+// NajlepszyWynik[2]=5
+
+// aby pobrać dane:
+// for(i=0; i<LiczbaNajwiększychWyników; i++){
+//     cout<<NajlepszyWynik[i]<<endl;
+// }
+
+// ELEMENTY TABLICY MÓSZĄ BYĆ TEGO SAMEGO TYPU
+
+// TABLICA DYNAMICZNA
+
+#include <vector> // biblioteka potrzebna do deklarowania tablic dynamicznych
+
+// definiowanie tablicy:
+// vector<typ> nazwa_tablicy(długość)
+
+// int main(){
+//     vector<int> Tablica(5);
+//     return 0;
+// }
+
+
+vector<int> Tablica(5,3) //tworzy tablicę 5 elementową gdzie każdy element ma początkową wartość 3
+
+vector<string> Listaimion(12, "brak imienia") //tablice 12 elementową gdzie każdy ma wartosc"brak imienia"
+
+vector<double> Tablica //Tworzy tablicę z 0 liczbą elementów
+
+
+Dodawanie elementów:
+vector<int> tablica (3,2)
+tablica push_back(8); //dodaje czwarty element do tablicy o wartości 8
+
+tablica pop_back() //usuwa element z tablicy
+
+// TABLICA WIELOWYMIAROWA
+
+typ nazwa_tablicy[dlugosc_x][dlugosc_y];
+
+// Tworzenie
+int tablica[5][4];
+
+// LUB z wykorzystaniem stałych
+
+int const dlugoscX(5);
+int const dlugoscY(4);
+int tablica[dlugoscX][dlugoscY];
+
+
+//przykład korzystania z tablicy
+string nazwaUrzytkownika(Janek);
+cout<<"nazywasz się"<<nazwaUrzytkownika<<endl;
+nazwaUrzytkownika[0] //niedokoczone odwołanie się do zmiennej string jak do tablicy
+
+// program z tablicą zapamiętującą 10 ocen i obliczjącą średnią z nich
+    int Oceny[10];
+
+
+    // pierwsze rozwiązanie
+
+    int main(){
+    int i, float Oceny[10], Srednia(0);
+        oceny[0]=2;
+        oceny[1]=4;
+        oceny[2]=5;
+        oceny[3]=3;
+        oceny[4]=5;
+        oceny[5]=3;
+        oceny[6]=2;
+        oceny[7]=4;
+        oceny[8]=3;
+        oceny[9]=5;
+        oceny[10]=3;
+
+        for(i=0; i<10; i++){
+            srednia+=Oceny[i];
+        }
+        srednia/=5
+        cout<<"Srednia wynosi: "<<srednia<<endl;
+        return 0;
+    }
+
+//drugie rozwiązanie
+    int main(){
+        for(i=0; i<10; i++){
+            cout<<"podaj ocene"<<endl;
+            cin>>ocena;
+            oceny[i]=ocena;
+        }
+        srednia/=5
+        cout<<"Srednia wynosi: "<<srednia<<endl;
+        return 0;
+    }

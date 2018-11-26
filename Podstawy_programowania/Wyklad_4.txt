@@ -1,0 +1,195 @@
+// switch/case
+
+    // Podstawowa składnia switcha:
+    // switch (zmienna){
+    //     case "wartosc1" instrukcje; ... break;
+    //     case "wartosc2" instrukcje; ... break;
+    //     case "wartosc3" instrukcje; ... break;
+    // default instrukcje;
+    // }
+
+    // int ocena;
+    // int main(){
+    //     cout<<"podaj ocene";
+    //     cin>>ocena;
+    //     switch(ocena){
+    //         case 1: cout<<"masz niedostateczny"; break;
+    //         case 2: cout<<"masz dopuszczający"; break;
+    //         case 3: cout<<"masz dostateczny"; break;
+    //         case 4: cout<<"masz dobry"; break;
+    //         case 5: cout<<"masz bardzo dobry"; break;
+    //         case 6: cout<<"masz celujacy"; break;
+    //         default: cout<<"nie ma takiej oceny";
+    //     }
+    // }
+
+
+// Wskaźniki -> zmienna wskazująca adres wartości innej zmiennej, struktury, funkcji, itp.
+// podstawowe operatory:
+// * - operator wyłuskania wartości zmiennej
+// & - operator pobrania adresu danej zmiennej
+
+// przykład deklinacji typu int:
+// int *a, *b
+
+// int telefon;    //zmienna liczbowa
+// int *wsk;       //zmienna wskaźnikowa typu liczbowego
+
+
+// int main(){
+//     int telefon=12345; //zmienna liczbowa
+//     int *wsk=&telefon; //zmienna wskaźnikowa typu liczbowego
+
+//     cout<< *wsk<<endl; //wyświetla wartość z adresu zmiennej telefon (12345)
+//     return 0;
+// }
+
+// int main(){
+//     int telefon=12345; //zmienna liczbowa
+//     int *wsk=&telefon; //zmienna wskaźnikowa typu liczbowego
+
+//     cout<<telefon<<endl;    //wyświetlanie wartości telefon (12345)
+//     cout<<&telefon<<endl;   //wyświetlanie adresu zmiennej telefon (adres zmiennej telefon)
+//     cout<<&wsk<<endl;       //wyświetlanie adresu wskaźnika (adres wskaźnika wsk)
+//     cout<<wsk<<endl;        //wyświetlanie adresu zmiennej telefon (adres zmiennej telefon)
+//     cout<<*wsk<<endl;       //wyświetlanie wyłuskanej wartości wskaźnika (12345)
+//     
+//     *wsk=666;
+//     cout<<telefon<<endl; //wyświetlone zostanie 666 ponieważ *wsk zmienia wartość zmiennej telefon
+// }
+
+//-------------------------------------------------------------------
+// int telefon=12345;
+// int *wsk=&telefon;
+// int **wsk2=&wsk;    //wskaźnik wsk2 zawiera adres wskaźnika wsk
+//-------------------------------------------------------------------
+
+// #include <iostream>
+// using namespace std;
+// voud zwieksz_liczbe (int *liczba){  //funkcja przyjmuje jako argument wskaźnik
+//     *liczba +=5;
+// }
+// int main(){
+//     int numer=5;
+//     int *wsk=&numer;
+//     cout<<numer<<endl;
+//     zwieksz_liczbe(wsk);    //przekazywany jest wskaźnik bez operatorów
+//     cout<<numer<<endl;
+//     zwieksz_liczbe(&numer); //przekazywany jest adres zmiennej (operator &)
+//     cout<<numer<<endl;
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// void zwieksz_kilka(int *dl, int *wys, int *waga){
+//     *dl*=2;
+//     *wys*=2;
+//     *waga*=2;
+// }
+// int main(){
+//     int dlugosc=125;
+//     int wysokosc=300;
+//     int waga=20;
+
+//     zwieksz_kilka(&dlugosc, &wysokosc, &waga);
+//     cout<<dlugosc<<endl;
+//     cout<<wysokosc<<endl;
+//     cout<<waga<<endl;
+//     return 0;
+// }
+
+
+// !ciekawostki!
+// int tablica[5]=(1,2,3,4,5);
+// int *wsk=*tablica[3];
+// cout<<*wsk<<endl;
+
+
+// char *wyraz="test";
+// char **wsk=&wyraz;
+// cout<<**wsk<<endl;
+
+
+
+// STRUKTURY
+
+// struct osoba{ //taka tablica tylko moze przechowywać zmienne różnego typu
+//     string imie;
+//     string nazwisko;
+//     int wiek;
+// }jan, artur, zenon //deklaracja wartości dla pojedyczego rekordu 
+
+
+// #include <iostream>
+// using namespace std;
+// struct osoba{
+//     string imie;
+//     string nazwisko;
+//     int wiek;
+// }
+// int main(){
+//     osoba jan:
+//     jan.imie="Jan";
+//     jan.nazwisko="Kowalski";
+//     jan.wiek="19";
+//     cout<<twoje dane to: <<jan.imie<<endl;
+// }
+
+
+// struktury zagnieżdzone
+
+// #include <iostream>
+// using namespace std;
+
+// struct zamieszkanie{
+//     char miejscowosc[50];
+//     int nr_domu;
+// }
+// struct student{
+//     char imie[20];
+//     char nazwisko[40];
+//     zamieszkanie dom; //zagnieżdżona struktura
+// }
+// int main(){
+//     student Jan;
+//     cin>>Jan.imie; //wczytywanie danych studenta
+//     cin>>Jan.dom.miejscowosc; //wczytanie elementów zagnieżdżonej struktury
+//     cin>>Jan.dom.nr_domu;
+//     cout<<endl;
+//     cout<<Jan.imie<<endl;
+//     cout<<Jan.dom.miejscowosc<<endl;
+//     cout<<Jan.dom.nr_domu<<endl;
+// }
+
+
+
+// tablica struktur
+
+// #include <iostream>
+// using namespace std;
+
+// struct osoba{
+//     string imie;
+//     string nazwisko;
+//     int wiek;
+// }
+// int main(){
+//     //tablica ze strukturą
+//     osoba uczniowie[5];
+
+//     //pobieramy dane
+//     for(int i=0; i<5; i++){
+//         cout<<"podaj imie ucznia nr"<< i+1<<endl;
+//         cin>>uczniowie[i].imie;
+//     }
+//     //wyświetlamy tablicę
+//     for (int i=0; i<5; i++){
+//         cout<<uczniowie[i].imie<<endl;
+//     }
+//     return 0;
+// }
+
+

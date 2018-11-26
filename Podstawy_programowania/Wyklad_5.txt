@@ -1,0 +1,166 @@
+// !!!KOLOKWIUM!!! 27 listopada 2018 (2 tygodnie) zamiast wykładu zakres od wykładu 1 do wykładu 5
+// na KOLOKWIUM nie przynosimy nic. są i pytanie zamknięte i !OTWARTE! 
+
+// TABLICE STRUKTUR I WSKAŹNIKI
+
+// #include <iostream>
+// using namespace std;
+// struct punkty{
+//     int x,y;
+//     char nazwa;
+// }
+
+// int main(){
+//     int n;
+//     cout<<"podaj liczbę punktów do stworzenia:";
+//     cin>>n;
+//     punkty *tab=new punkty[n]; // dynamiczne przydzielanie pamięci na n elementów
+//     for(int i=0; i<0; i++){ // przypisanie wartości punktów
+//         cout<<"Punkt"<<i+1<<"n/";
+//         cout<<"x="
+//     }
+// //na zdjęciu u maćka jest
+// }
+
+
+// WSKAŹNIKI JAKO POLA STRUKTUR
+
+// struct punkty{
+//     int *x, *y;
+//     char nazwa;
+// }
+// int main(){
+//     punkty *A=new punkt;
+//     cin>>*A->x; //przypisanie wartości do zmienej wskaźnikowej
+//     cin>>A->nazwa;  //przypisanie wartości do zwykłej zmiennej
+//     cout<<*A->x<<endl;  //wypisanie wartości zmiennej wskaźnikowej
+//     cout<<A->nazwa<<endl;   //wypisanie wartości zwykłej zmiennej
+//     return 0;
+// }
+
+
+
+// UNIE wielkość pamięci jaka zajmuje unia wynosi tyle co największy element tej struktury
+
+// union nazwa{
+//     typ pierwszy_element;
+//     typ drugi_element;
+//     typ n-ty_element;
+// }
+
+// int main(){
+//     nazwa unia; //tworzenie unii
+//     unia pierwszy_element=0; //odwołanie się do elementu
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// union liczba{
+//     int calkowita; long long dluga; double rzeczywiste;
+// }
+// int main(){
+//     luczba a, b, c, d;
+//     cout<<"unia zajmuje "<<sizeof(liczba); //8 bajtów tyle ile największy typ -> double
+//     cout<<"podaj trzy liczby całkowite";
+//     cin>>a.calkowita>>b.calkowita>>c.calkowita;
+//     d.rzeczywista=double(a.calkowita+b.calkowita+c.calkowita)/3;
+//     cout<<"Średnia wczytywanych liczb wynosi: "<<d.rzeczywista<<endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// union liczba{
+//     int całkowita;
+//     double rzeczywista;
+// }
+// struct samochod{
+//     char marka[20];
+//     char model[20];
+//     int rocznik;
+//     liczba.pojemnosc;
+// }
+// int main(){
+//     samochod renault; //wczytanie danych
+//     cout<<"podaj markę";
+//     cin>>renault.marka; //odwołujemy się za pomocą operatora .
+//     cout<<"podaj pojemnosc :";
+//     cin>>renault.pojemnosc.rzeczywista; //odwołujemy sie za pomoca operatora .
+//     //wypisanie danych
+//     cout<<"Marka:"<<renault.marka<<endl; //dowołujemy się tak samo jak wcześniej
+//     return 0;
+// }
+
+
+
+// WSKAŹNIKI I FUNKCJE
+
+// #include <iostream>
+// using namespace std;
+// void zwieksz_kilka(int *dl, int *wys, int *waga){
+//     *dl*=2;
+//     *wys*=2;
+//     *waga*=2;
+// }
+// int main(){
+//     int dlugosc=125;
+//     int wysokosc=300;
+//     int waga=20;
+//     zwieksz_kilka(&dlugosc, &wysokosc, &waga);
+//     cout<<dlugosc<<endl;
+//     cout<<wysokosc<<endl;
+//     cout<<waga<<endl;
+//     return 0;
+// }
+
+
+// void zmien(int &liczba){
+//     liczba=123456 //modyfikuje referęcje mo
+// }
+// int main(){
+//     int test=0;
+// }
+// // w materiałąch jest dalej bo poco poczekać...
+
+
+// zad1
+
+// #include <iostream>
+// using namespace std;
+// void zamiana(int *x, int *y){
+//     *x=*x+*y;
+//     *y=*x-*y;
+//     *x=*x-*y;
+// }
+// int main(){
+//     int a;
+//     int b;
+//     int *w1=&a;
+//     int *w2=&b;
+//     zamiana(*w1, *w2);
+//     cout<<a<<endl<<b<<endl;
+//     return 0;
+// }
+
+
+// zad2
+
+// #include <iostream>
+// using namespace std;
+// void zamiana(int &x, int &y){
+//     &x=&x+&y;
+//     &y=&x-&y;
+//     &x=&x-&y;
+// }
+// int main(){
+//     int a;
+//     int b;
+//     int *w1=&a;
+//     int *w2=&b;
+//     zamiana(*w1, *w2);
+//     cout<<a<<endl<<b<<endl;
+//     return 0;
+// }

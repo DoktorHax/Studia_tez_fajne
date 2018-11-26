@@ -1,0 +1,250 @@
+// POWTURZENIE MATERIAŁU... PODOBNO!!!
+
+// wyklad 1
+// jak wgląda katalog z projektem
+// jak wygląda najprostrze hello world
+// działanie cin i cout
+
+// wyklad 2
+// definicja pojęcia zmiennej, stałej, funkcji, funkcji która nic nie zwraca (nie trzeba książkowo)
+
+// co jakie typy dokładnie robią
+// int 
+// unsigned int - tyko dodatni int
+// long, long long, float itp
+
+// jak przejść na liczby dodatnie
+
+// pojęcie zmiennej globalnej i lokalnej
+
+// Operatory
+// +, -, *, /, %- modulo (reszta z dzielenia)
+
+// operatory logiczne OR, AND, &&, ||, itp.
+
+// operatory porównania
+// ==, !=, itp.
+
+// operartory przypisania:
+// =, +=, -=, *=, /=
+
+// inkrementacja dekrementacja
+
+// INSTRUKCJA WARUNKOWA (pan nie kojaży w teście cobby było ale jest ważne)
+
+// napewno będzie jakaś pętla
+
+// przykładowy kod który korzysta z jakiejś pętli i trza go przerobić tak aby działał z wykorzystaniem innej pętli
+
+// wyklad 3
+// FUNKCJEEEEE!!!!!!!!11111jedenjedenjeden
+// I
+// REKURENCJEEEE
+
+// odróżnienie funkcji od funkcji void:
+// -  funkcja zawsze zwraca wartość i jest napisana w oodrębnieniu od reszty programu;
+// -  funkcja void nie zwraca wartości. (pan nazywa go procedurą bo coś wykonuje nic nie zwraca)
+
+// funkcja wywołująca funkcje działa
+// main też jest funkcją w C++
+
+// funkcja wywołujaca sama siebie nazywa się rekuręcją
+// rekurencja na 100% będzie an kolosie !!!!!! <--------------------------------------------------------------------
+// PRZYKŁAD mamy gotową funkcje rekurencyjną i mamy 2-3 zdaniami opisać jej działąnie i rozpoznać co ona robi
+
+// (patrz wykład 3 one tam są)
+// funkcja fibonacciego
+// funkcja suma_cyfr
+
+
+// Wyklad 4
+// ciągniemy funkcje malina ciągniemy funkcje
+// funkcja silnia <- przykład wyjścia funkcji WAŻNE
+
+// TABLICE
+// pierwszą zmienną w tablicy liczymy od 0 zawsze od 0 jak nie od 0 to lufa więc... 0 0 0 0 kurwa 0!!!
+
+// czym jest długość czy wymiar tablicy
+
+// DługośćTablicyDwudziestokata <- tam jest dobrzy przykład
+
+// elementów tablicy mozna używać jak zwykłych zmiennych
+
+// pamiętać tablice majązmienne tylko jednego typu
+
+// tablice dynamiczne "nie moge poweidzieć że to jest temat mniej ważny ale na pewno rzadziej używany"
+
+// tablica trzywymiarowa też istnieje
+
+
+
+
+// INSTRUKCJA SWITCH 
+// "czy mozna w tej instrukcji można zadeklarować czynność lub instrukcje tak można, czy trzeba nei nie trzeba"
+
+// jaką funkcje pełni BREAK;
+
+// WSKAŹNIKI
+// wytłumaczone na początku wyklad_4.txt
+// mogą wskazywać na tablice lub inną funkcje
+
+// WAŻNY SLAJD DLA PANA
+// int main(){
+//     int telefon=12345; //zmienna liczbowa
+//     int *wsk=&telefon; //zmienna wskaźnikowa typu liczbowego
+
+//     cout<<telefon<<endl;    //wyświetlanie wartości telefon (12345)
+//     cout<<&telefon<<endl;   //wyświetlanie adresu zmiennej telefon (adres zmiennej telefon)
+//     cout<<&wsk<<endl;       //wyświetlanie adresu wskaźnika (adres wskaźnika wsk)
+//     cout<<wsk<<endl;        //wyświetlanie adresu zmiennej telefon (adres zmiennej telefon)
+//     cout<<*wsk<<endl;       //wyświetlanie wyłuskanej wartości wskaźnika (12345)
+//     
+//     *wsk=666;
+//     cout<<telefon<<endl; //wyświetlone zostanie 666 ponieważ *wsk zmienia wartość zmiennej telefon
+// }
+// i to trza wiedzieć co dokłądnie jest w komentarzach wsensie jak to się nazywa
+// UWAGA "moge zamienić kolejność i nazwy"
+
+//-------------------------------------------------------------------
+// int telefon=12345;
+// int *wsk=&telefon;
+// int **wsk2=&wsk;    //wskaźnik wsk2 zawiera adres wskaźnika wsk
+//-------------------------------------------------------------------
+//"to wyrzej to jest tylko przykłąd moze chodzić o coś innego"
+
+
+// "lepszy przykład dla trzech wskaźników"
+// #include <iostream>
+// using namespace std;
+// void zwieksz_kilka(int *dl, int *wys, int *waga){
+//     *dl*=2;
+//     *wys*=2;
+//     *waga*=2;
+// }
+// int main(){
+//     int dlugosc=125;
+//     int wysokosc=300;
+//     int waga=20;
+
+//     zwieksz_kilka(&dlugosc, &wysokosc, &waga);
+//     cout<<dlugosc<<endl;
+//     cout<<wysokosc<<endl;
+//     cout<<waga<<endl;
+//     return 0;
+// }
+
+
+// STRUKTURY definicja, umieć zadeklarować strukture
+// (może być opisane słowami należy wtedy zrobić kodzik może być opisane kodzikiem należy opisać co robi słowami)
+// RÓŻNE TYPT DANYCH NAJWIĘKSZY PLUS STRUKTUR
+// umieć wyprowadzenie danych ze struktury
+
+// STRUKTURA ZAGNIEŻDŻONA
+// kropki używamy pare razy
+
+// PRZYKŁAD STRUKTURY ZAGNIEŻDZONEJ
+// struct zamieszkanie{
+//     char miejscowosc[50];
+//     int nr_domu;
+// }
+// struct student{
+//     char imie[20];
+//     char nazwisko[40];
+//     zamieszkanie dom; //zagnieżdżona struktura
+// }
+// int main(){
+//     student Jan;
+//     cin>>Jan.imie; //wczytywanie danych studenta
+//     cin>>Jan.dom.miejscowosc; //wczytanie elementów zagnieżdżonej struktury
+//     cin>>Jan.dom.nr_domu;
+//     cout<<endl;
+//     cout<<Jan.imie<<endl;
+//     cout<<Jan.dom.miejscowosc<<endl;
+//     cout<<Jan.dom.nr_domu<<endl;
+// }
+
+
+// POŁĄCZNIE TABLIC, WSKAŹNIKÓW I STRUKTUR może się pojawić
+// "tablica struktur"
+// #include <iostream>
+// using namespace std;
+
+// struct osoba{
+//     string imie;
+//     string nazwisko;
+//     int wiek;
+// }
+// int main(){
+//     //tablica ze strukturą
+//     osoba uczniowie[5];
+
+//     //pobieramy dane
+//     for(int i=0; i<5; i++){
+//         cout<<"podaj imie ucznia nr"<< i+1<<endl;
+//         cin>>uczniowie[i].imie;
+//     }
+//     //wyświetlamy tablicę
+//     for (int i=0; i<5; i++){
+//         cout<<uczniowie[i].imie<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+// Wyklad 5
+
+// TABLICE STRUKTUR I WSKAŹNIKI
+// #include <iostream>
+// using namespace std;
+// struct punkty{
+//     int x,y;
+//     char nazwa;
+// }
+// int main(){
+//     int n;
+//     cout<<"podaj liczbę punktów do stworzenia:";
+//     cin>>n;
+//     punkty *tab=new punkty[n]; // dynamiczne przydzielanie pamięci na n elementów
+//     for(int i=0; i<0; i++){ // przypisanie wartości punktów
+//         cout<<"Punkt"<<i+1<<"n/";
+//         cout<<"x="
+//     }
+// //na zdjęciu u maćka jest
+// }
+
+
+// WSKAŹNIKI JAKO POLA STRUKTUR
+// struct punkty{
+//     int *x, *y;
+//     char nazwa;
+// }
+// int main(){
+//     punkty *A=new punkt;
+//     cin>>*A->x; //przypisanie wartości do zmienej wskaźnikowej
+//     cin>>A->nazwa;  //przypisanie wartości do zwykłej zmiennej
+//     cout<<*A->x<<endl;  //wypisanie wartości zmiennej wskaźnikowej
+//     cout<<A->nazwa<<endl;   //wypisanie wartości zwykłej zmiennej
+//     return 0;
+// }
+
+// UNIE!!!! definicje unie
+
+// UNIE wielkość pamięci jaka zajmuje unia wynosi tyle co największy element tej struktury
+// union nazwa{
+//     typ pierwszy_element;
+//     typ drugi_element;
+//     typ n-ty_element;
+// }
+// int main(){
+//     nazwa unia; //tworzenie unii
+//     unia pierwszy_element=0; //odwołanie się do elementu
+//     return 0;
+// }
+
+// łączenie unie jako składowe struktur (połączenie musi mieć swoje powody i zastosowanie)
+// "jakie klasyczne zastosowanie gdzy łączymy te elementy(najczęściej w zastosowaniach bazodanowych)"
+
+
+// Przekazywanie argumentów do funkcji w różny sposób
+// (poprzez wskaźnik, referęcje)
