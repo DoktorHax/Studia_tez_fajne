@@ -1,0 +1,13 @@
+// programowanie obiektowe yay
+// "seria rysunków które są bardzo fajne..." czy coś
+
+// klasa - zbiór wartości definiujący objekt.
+
+// no to tutaj popłynoł z czarodziejkami i barbarzycami... o mateczko....
+// klasa=arybuty+funkje <--- poprawna odpowiedź na pytanie "co to jest klasa?".
+
+// ja bym wsumie chciał ale totalnie nic nie widze i mi się niechce więc sory...
+
+// czmu prywatne pola a publiczne metody
+// metody są plubliczne poto zeby w dowolnym miejscu programu mozna było by na tych zmiennych opeerować
+// i je zmieniać dzięki czemu nie da sięobejść metody i wprowadzić przypadkową/błędną wartość
