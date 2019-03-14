@@ -1,0 +1,2 @@
+Klasa abstrakcyjna - klasa z chociaż jedną metodą abstrakcyjną dla klasy abstrakcyjnej nie można zrobić instancji.
+Klasa finalna - klasa której nie można już zmieniać.
