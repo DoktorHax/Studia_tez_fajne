@@ -20,7 +20,7 @@ int gameBoard[9] = { 0,0,0,0,0,0,0,0,0 };
 int winner = 0;
 int wins[3];
 
-BOOL GetGameBoardRect(HWND hwnd, RECT*pRect) {
+BOOL GetGameBoardRect(HWND hwnd, RECT * pRect) {
 	RECT rc;
 	if (GetClientRect(hwnd, &rc)) {
 		int width = rc.right - rc.left;

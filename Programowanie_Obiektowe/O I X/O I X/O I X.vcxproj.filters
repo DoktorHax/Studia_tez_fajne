@@ -48,13 +48,19 @@
     <Image Include="O I X.ico">
       <Filter>Pliki zasobów</Filter>
     </Image>
-    <Image Include="..\..\..\..\tic-tac-toe-128.png">
-      <Filter>Pliki zasobów</Filter>
-    </Image>
     <Image Include="..\..\..\..\Player1.ico">
       <Filter>Pliki zasobów</Filter>
     </Image>
     <Image Include="..\..\..\..\Player2.ico">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="PLAYER1.ico">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="PLAYER2.ico">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="..\..\..\..\tic-tac-toe-128.png">
       <Filter>Pliki zasobów</Filter>
     </Image>
   </ItemGroup>
