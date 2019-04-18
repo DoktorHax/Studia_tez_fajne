@@ -1,38 +1,15 @@
 #include <iostream>
+#include "class.h"
 using namespace std;
-string name;
-int age;
-string info;
 
-class Animal
-{
-	protected:
-		string name;
-		int age;
-        string info;
-	public:	
-		void setValue(string name,int age,string info);
-		void displayinfo();
-};
-class zebra:public Animal{
-};
-	void Animal::setValue(string name,int age,string info)
-	{
-		this->name=name;
-		this->age=age;
-	}
-		void Animal::displayinfo()
-	{
-		cout <<"name: "<<name<<endl<<"age: "<<age<<endl;
-	}
-	
-int main()
-{
-	Animal zebra;
-	zebra.setValue("Franek", 18);
+int main(){
+	Zebra zebra;
+	zebra.setValue("nie znam nazw zebr", 3, "jest czarno biala czy bialo czarna?");
 	zebra.displayinfo();
-    Animal delfin;
-    delfin.setValue("Franek", 18);
+    
+	Dolphin delfin;
+    delfin.setValue("nie znam nazw delfinow", 5, "delfiny to ssaki");
 	delfin.displayinfo();
+	
 	return 0;
 }

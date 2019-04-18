@@ -1,0 +1,4 @@
+ Adamski Adam      4.5 La19
+ Bogdanski Bogdan  3.0 La13
+ Celinski czeslaw  3.5 La7
+           

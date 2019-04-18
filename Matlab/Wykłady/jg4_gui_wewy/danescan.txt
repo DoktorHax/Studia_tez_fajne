@@ -1,0 +1,14 @@
+/*
+oceny grupy oraz wymbole i wspolczynniki
+*/
+"Adamski Adam"            3.5    3.5    4.0 /*oceny*/
+"Boganski Bogdan"         5.0    3.0    3.5
+"Celinski Czeslaw"        3.5    4.5    4.0
+
+71 72 73 /* liczba studentow na zajeciach
+
+P-praca Q-jakosc W-wynik
+X-rezerwa1 Y-rezerwa2 Z-rezerwa3
+
+1.4  0.1  2.2   0.1 /*wspolczynniki trudnosci*/
+2.4  1.2  2.2   3.2 /*wspolczynniki ulatwienia 2*/
